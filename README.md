@@ -8,4 +8,4 @@ prévu :
 - ajout d'un récap de score des joueurs
 - ajout de difficulté au fur et à mesure du jeu
 
-Les images ont été dessinés spécialement pour le jeu, les droits sont donc reservés à l'auteure.
+Les images ont été dessinées spécialement pour le jeu, les droits sont donc reservés à l'auteure.
