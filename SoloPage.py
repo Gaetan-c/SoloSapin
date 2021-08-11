@@ -56,8 +56,9 @@ while running:
         # que l'event est fermeture de fenêtre
         if event.type == pygame.QUIT:
             running = False
+            print(game.player.score, " points !")
             pygame.quit()
-            print(game.player.score, "points !")
+
 
             # mettre le jeu en pause, en gardant 'p' appuyer
         elif keys[pygame.K_p]:
