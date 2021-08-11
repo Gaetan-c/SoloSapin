@@ -28,6 +28,10 @@ class Player(pygame.sprite.Sprite):
     def move_down(self):
         self.rect.y += self.velocity
 
+    def diagonal(self):
+        if self.rect.x and self.rect:
+            self.velocity /= 2
+
     def image_sapin(self):
         if 4 <= self.health < 5:
             self.image = pygame.image.load('Images/SapinSapine1.png')
@@ -60,7 +64,7 @@ class Player(pygame.sprite.Sprite):
 
     def collision_boules(self):
         if self.game.check_collision(self, self.game.all_boules):
-            self.game.player.score += 1
+            self.game.player.score += 5
 
     def heal_sapin(self):
         if self.health < self.max_health and self.game.check_collision(self, self.game.all_stars):
